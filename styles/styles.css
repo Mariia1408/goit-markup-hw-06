@@ -727,6 +727,7 @@ img {
   width: 408px;
   min-height: 576px;
   padding: 24px;
+  padding-top: 72px;
   background-color: var(--modal-bg);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -736,6 +737,9 @@ img {
 }
 
 .modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -744,7 +748,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   padding: 0;
   color: var(--close-btn-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -835,7 +838,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--placeholder-color);
+  color: var(--main-color);
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -844,7 +847,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--placeholder-color);
+  color: var(--close-btn-color);
   /* padding: 8px 16px; */
 }
 
@@ -885,4 +888,8 @@ img {
 
 .checkbox-label a {
   color: var(--logo-color);
+}
+
+.modal-button {
+  margin-top: 24px;
 }
